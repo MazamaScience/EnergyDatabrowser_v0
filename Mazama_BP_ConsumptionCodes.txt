@@ -1,0 +1,86 @@
+code,english
+US,USA
+CA,Canada
+MX,Mexico
+X1,Total North America
+AR,Argentina
+BR,Brazil
+CL,Chile
+CO,Colombia
+EC,Ecuador
+PE,Peru
+VE,Venezuela
+X2,Other S. & Cent. America
+X3,Total S. & Cent. America
+AT,Austria
+AZ,Azerbaijan
+BY,Belarus
+Y1,Belgium & Luxembourg
+BG,Bulgaria
+CZ,Czech Republic
+DK,Denmark
+FI,Finland
+FR,France
+DE,Germany
+GR,Greece
+HU,Hungary
+IS,Iceland
+IE,Republic of Ireland
+IT,Italy
+KZ,Kazakhstan
+LT,Lithuania
+NL,Netherlands
+NO,Norway
+PL,Poland
+PT,Portugal
+RO,Romania
+X4,Russian Federation
+SK,Slovakia
+ES,Spain
+SE,Sweden
+CH,Switzerland
+TR,Turkey
+TM,Turkmenistan
+UA,Ukraine
+GB,United Kingdom
+UZ,Uzbekistan
+X5,Other Europe & Eurasia
+X6,Total Europe & Eurasia
+IR,Iran
+IQ,Iraq
+KW,Kuwait
+OM,Oman
+QA,Qatar
+SQ,Saudi Arabia
+AE,United Arab Emirates
+X7,Other Middle East
+X8,Total Middle East
+DZ,Algeria
+EG,Egypt
+ZA,South Africa
+X9,Other Africa
+X1, Total Africa
+AU,Australia
+BD,Bangladesh
+CN,China
+Y2,China Hong Kong SAR
+IN,India
+ID,Indonesia
+JP,Japan
+MY,Malaysia
+NZ,New Zealand
+PK,Pakistan
+PH,Philippines
+SG,Singapore
+KR,South Korea
+TW,Taiwan
+TH,Thailand
+X1, Other Asia Pacific
+X2, Total Asia Pacific
+X3, TOTAL WORLD
+X4, Of which OECD
+Y3,Of which European Union 25#
+Y4,Of which European Union 25#
+Y5,               OECD
+Y6,                Former Soviet Union
+Y7,               Other EMEs

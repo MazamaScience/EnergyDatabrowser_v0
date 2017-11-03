@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en">
+
+<head>
+
+  <title>Energy Export Databrowser</title>
+
+  <meta name="keywords" content="coal, oil, gas, petroleum, peak oil, energy export, energy security, oil,
+                                 energy, import, export, data, British Petroleum, Statistical Review" />
+  <meta name="description" content="Explore timelines of fossil fuel use in over 100 nations and regions." />
+  <meta name="author" content="mazamascience.com" />
+
+  <script type="text/javascript" src="./behavior/prototype.js"></script>
+  <script type="text/javascript" src="./behavior/ShowHide.js"></script>
+
+  <link rel="stylesheet" href="style/Mazama_databrowser_base.css">
+  <link rel="stylesheet" href="style/ShowHide.css">
+  <link rel="stylesheet" href="style/OilExport.css">
+
+</head> 
+
+<body>
+
+<div id="container">
+
+  <div id="header">
+  </div>
+      
+  <div id="navigation">
+    <div class="br"><div class="bl">
+      <a id="databrowserTitle" href="index.html">Energy Export Databrowser</a>
+      <ul id="navlist"><!-- menu -->
+         <li><a class="this_page" href="data.html">Data</a></li>
+         <li><a href="about.html">About</a></li>
+       </ul>
+    </div></div>
+  </div>
+
+  <div id="content">
+
+    <h1>Sources of data used in the Energy Export Databrowser</h1>
+    <div id="overview">
+This page describes the data sources used in the 
+<a href="http://mazamascience.com/OilExport/">Energy Export Databrowser</a>.
+You may show or hide any section by clicking on the section header.
+    </div>
+
+    <h2 class="expanded">BP Statistical Review 2012</h2>
+    <div>
+      <p>
+The  BP Statistical Review is British Petroleum's best effort to review world energy trends.  Produced once a year,
+the Excel workbook
+contains regional consumption and production data for Oil, Natural Gas, Coal, Nuclear and Hydroelectric energy resources.
+Data from several worksheets in the Statistical Review are used as input to the Energy Export Databrowser.
+The data used by the Databrowser are unaltered except 
+for minor cleanup as described the section on "ISO Standardized Data" below.
+It is assumed that BP has made every effort to harmonize data from different sources and ensure that values within this
+workbook are consistent and comparable between nations.
+      </p>
+
+      <h3 class="trigger">Definitions</h3>
+      <div class="level-3">
+        <p>
+  All definitions are taken <i>verbatim</i> from the BP Statistical Review worksheets.
+        </p>
+        <dl>
+
+          <dt>Coal Production</dt>
+          <dd>Commercial solid fuels only, i.e. bituminous coal and anthracite (hard coal), and lignite and brown (sub-bituminous) coal.</dd>
+          <dt>Coal Consumption</dt>
+          <dd>Commercial solid fuels only, i.e. bituminous coal and anthracite (hard coal), and lignite and brown (sub-bituminous) coal.</dd>
+
+          <dt>Oil Production</dt>
+          <dd>Includes crude oil, shale oil, oil sands and NGLs (the liquid content of natural gas where this is recovered separately).</dd>
+          <dt>Oil Consumption</dt>
+          <dd>Inland demand plus international aviation and marine bunkers and refinery fuel and loss.  Consumption of 
+  fuel ethanol and biodiesel is also included.</dd>
+
+          <dt>Natural Gas Production</dt>
+          <dd>Excludes gas flared or recycled.  As data are derived from tonnes oil equivalent using average conversion factors, they
+  do not necessarily equate with gas volumes expressed in specific national terms.</dd>
+          <dt>Natural Gas Consumption</dt>
+          <dd>Differences between consumption figures and production statistics are due to variations in stocks at storage 
+  facilities and liquefaction plants, together with unavoidable disparities in the definition, measurement or conversion 
+  of gas supply and demand data.  As data are derived from tonnes oil equivalent using average conversion factors, they
+  do not necessarily equate with gas volumes expressed in specific national terms.</dd>
+
+          <dt>Hydro Production</dt>
+          <dd>Based on gross primary hydroelectric generation and not accounting for cross-border electricity supply.</dd>
+          <dt>Hydro Consumption</dt>
+          <dd>Based on gross primary hydroelectric generation and not accounting for cross-border electricity supply.</dd>
+
+          <dt>Nuclear Production</dt>
+          <dd>Based on gross generation and not accounting for cross-border electricity supply.</dd>
+          <dt>Nuclear Consumption</dt>
+          <dd>Based on gross generation and not accounting for cross-border electricity supply.</dd>
+
+        </dl>
+      </div>
+  
+      <h3 class="trigger">Notes</h3>
+      <div class="level-3">
+        <p>
+  The "Definitions" worksheet of the Statistical review contains the following note:
+        </p>
+        <blockquote>
+  The primary energy values of both nuclear and hydroelectric power generation have
+  been derived by calculating the equivalent amount of fossil fuel required to generate
+  the same volume of electricity in a thermal power station, assuming a conversion
+  efficiency of 38% (the average for OECD thermal power generation).
+        </blockquote>
+        <p>
+  This means that the data in the nuclear and hydroelectric worksheets in units of 'mtoe' (milltion tonnes of oil equivalent) are scaled 
+  up by a factor of 1/0.38 (=2.63).
+  When fossil fuels are used primarily for generation of electricty, this scaling can be useful.
+  It allows the amount of electrical energy available to consumers from nuclear and hydro power plants to be compared with the amount
+  available to consumers from coal/oil/gas fired power plants.
+        </p>
+        <p>
+  To see the unscaled energy produced by nuclear and hydro power plants you must choose units of 
+  'twh' (Terawatt-hours) or 'J' (Exajoules).  Choosing units of Exajoules allows one to compare energy generated from nuclear or 
+  hydro with the 'embedded energy' in fossil fuels.  From the standpoint of energy avaiable for human use, without assumptions
+  as to how it will be used, Exajoules is a more appropriate unit.
+        </p>
+      </div>
+  
+      <h3 class="trigger">Original Data</h3>
+      <div class="level-3">
+        <p>
+          The original 2012 Statistical Review may be obtained from British Petroleum: 
+        </p>
+        <p class="level-4">
+<a href="http://www.bp.com/assets/bp_internet/globalbp/globalbp_uk_english/reports_and_publications/statistical_energy_review_2012/STAGING/local_assets/spreadsheets/statistical_review_of_world_energy_full_report_2012.xls">statistical_review_of_world_energy_full_report_2012.xls</a>
+        </p>
+        <p>
+          Copies of the current and older versions are archived on this site:
+        </p>
+        <p class="level-4">
+          <a href="BP_2012.xls">BP_2012.xls</a>&nbsp;
+          <a href="BP_2010.xls">BP_2011.xls</a>&nbsp;
+          <a href="BP_2010.xls">BP_2010.xls</a>&nbsp;
+          <a href="BP_2009.xls">BP_2009.xls</a>&nbsp;
+          <a href="BP_2008.xls">BP_2008.xls</a>&nbsp;
+          <a href="BP_2007.xls">BP_2007.xls</a>&nbsp;
+          <a href="BP_2006.xls">BP_2006.xls</a>&nbsp;
+          <a href="BP_2005.xls">BP_2005.xls</a>&nbsp;
+          <a href="BP_2004.xls">BP_2004.xls</a>&nbsp;
+          <a href="BP_2003.xls">BP_2003.xls</a>&nbsp;
+          <a href="BP_2002.xls">BP_2002.xls</a>
+        </p>
+      </div>
+  
+      <h3 class="trigger">ISO Standardized Data</h3>
+      <div class="level-3">
+        <p>
+  For use in the Energy Export Databrowser, these data were converted from Excel spreadsheets with English
+  language country names into ASCII CSV files with
+  <a target="_blank" href="http://www.iso.org/iso/prods-services/iso3166ma/02iso-3166-code-lists/list-en1-semic.txt">ISO 3166-1</a>
+  two-digit country codes.  These standardized data files are offered to the community in the interest of 
+  promoting internationalization and further investigation of the data.
+        </p>
+        <p>
+  Additional cleanup of the Excel worksheets included:
+          <ul>
+            <li>conversion of numeric values stored as characters into floating point values</li>
+            <li>conversion of '^' and '-' markers into floating point 0.0</li>
+            <li>conversion of 'n/a' missing values markers to 'na'</li>
+            <li>conversion of regions with no country equivalent into unique codes of the form:  "BP_~~~" (<i>e.g.</i>Total North America = BP_TNA)</li>
+          </ul>
+        </p>
+        <p>
+  The ISO standardized files are:
+          <ul>
+            <li><a target="_blank" href="BP_2012_coal_consumption_mtoe.csv">BP_2012_coal_consumption_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_coal_production_mtoe.csv">BP_2012_coal_production_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_consumption_ft3.csv">BP_2012_gas_consumption_ft3.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_consumption_m3.csv">BP_2012_gas_consumption_m3.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_consumption_mtoe.csv">BP_2012_gas_consumption_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_production_ft3.csv">BP_2012_gas_production_ft3.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_production_m3.csv">BP_2012_gas_production_m3.csv</a></li>
+            <li><a target="_blank" href="BP_2012_gas_production_mtoe.csv">BP_2012_gas_production_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_hydro_consumption_mtoe.csv">BP_2012_hydro_consumption_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_hydro_consumption_twh.csv">BP_2012_hydro_consumption_twh.csv</a></li>
+            <li><a target="_blank" href="BP_2012_nuclear_consumption_mtoe.csv">BP_2012_nuclear_consumption_mtoe.csv</a></li>
+            <li><a target="_blank" href="BP_2012_nuclear_consumption_twh.csv">BP_2012_nuclear_consumption_twh.csv</a></li>
+            <li><a target="_blank" href="BP_2012_oil_consumption_bbl.csv">BP_2012_oil_consumption_bbl.csv</a></li>
+            <li><a target="_blank" href="BP_2012_oil_consumption_mtoe.csv">BP_2012_oil_consumption_mtoe.csv</a></li>
+            <!--
+            <li><a target="_blank" href="BP_2012_oil_crude_prices_since_1861.csv">BP_2012_oil_crude_prices_since_1861.csv</a></li>
+            -->
+            <li><a target="_blank" href="BP_2012_oil_production_bbl.csv">BP_2012_oil_production_bbl.csv</a></li>
+            <li><a target="_blank" href="BP_2012_oil_production_mtoe.csv">BP_2012_oil_production_mtoe.csv</a></li>
+          </ul>
+        </p>
+      </div>
+  
+    </div> <!-- END of BP Statistical Review 2012 -->
+  
+  </div>
+  
+  <div id="footer"><div class="tl"><div class="tr"><div class="br"><div class="bl">
+    <span id="slogan">Data - Information - Knowledge</span>
+    <span>
+      Hosted by <a class="mazama-science" href="http://mazamascience.com">Mazama Science</a>
+    </span>
+  </div></div></div></div></div>
+
+</div>
+  
+</body>
+</html>

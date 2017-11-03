@@ -1,0 +1,33 @@
+title         = ASCII CSV version of Geothermal data from the 2010 British Petroleum Statistical Review (worksheet 44)
+file URL      = http://mazamascience.com/OilExport/BP_2010_geothermal_mwh.csv
+original data = http://www.bp.com/liveassets/bp_internet/globalbp/globalbp_uk_english/reports_and_publications/statistical_energy_review_2008/STAGING/local_assets/2010_downloads/Statistical_Review_of_World_Energy_2010.xls
+country codes = ISO3166-1 two-letter codes or 'BP_~~~' for special groups (e.g. BP_TNA = Total North America)
+units         = million tonnes per year
+
+"YEAR",1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1995,2000,2003,2004,2005,2006,2007,2008,2009
+"AR","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.7,0.7,0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"AT","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,0.0,0.0,1.3,1.2,1.2,1.2,1.2,1.2,1.4
+"AU","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.2,1.1
+"CN","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",30.8,27.8,27.8,27.8,27.8,27.8,27.8,27.8,24.0,24.0
+"CR","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,55.0,142.5,162.5,162.5,162.5,162.5,162.5,162.5,166.0
+"SV","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",95.0,105.0,161.0,161.0,151.0,151.0,195.0,195.0,204.4,204.4
+"ET","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,0.0,7.3,7.3,7.3,7.3,7.3,7.3,7.3,7.3
+"FR","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",4.2,4.2,4.2,4.2,14.7,14.7,14.7,14.7,16.0,16.0
+"DE","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,0.0,0.0,0.2,0.2,0.2,0.2,3.2,6.6,6.6
+"GT","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,0.0,28.0,33.0,33.0,33.0,33.0,52.0,52.0,52.0
+"IS","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",44.6,50.0,172.1,202.1,202.1,202.1,312.1,485.1,575.1,575.1
+"ID","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",144.8,309.8,589.5,807.0,807.0,855.5,921.0,992.0,1060.0,1197.0
+"IT","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",545.0,631.7,785.0,790.5,790.5,790.5,810.5,810.5,810.5,843.0
+"JP","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",214.6,413.7,534.0,534.0,534.0,534.0,536.0,536.0,536.0,536.0
+"KE","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",45.0,45.0,45.0,121.0,127.0,129.0,129.0,131.0,167.0,167.0
+"MX","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",803.0,843.0,943.0,953.0,953.0,953.0,953.0,958.0,958.0,958.0
+"NZ","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",283.2,282.0,431.0,399.0,397.0,435.0,488.0,505.0,628.3,628.3
+"NI","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",35.0,70.0,70.0,77.5,77.5,77.5,77.5,87.5,87.5,87.5
+"PG","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.0,0.0,0.0,5.5,5.5,5.5,36.0,56.0,56.0,56.0
+"PH","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",888.0,1154.0,1931.0,1931.0,1931.0,1931.0,1969.7,1908.7,1904.0,1904.0
+"PT","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",3.0,5.0,16.0,16.0,16.0,16.0,16.0,29.0,29.0,29.0
+"RU","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",11.0,11.0,23.0,73.0,79.0,79.0,79.0,82.0,82.0,82.0
+"TH","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+"TR","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",20.6,20.4,20.4,20.4,20.4,20.4,27.8,27.8,34.6,81.6
+"US","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",2774.6,2816.7,2228.0,2020.0,2534.0,2653.0,2687.0,2849.6,2910.6,3086.6
+"BP_WORLD","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na","na",5943.6,6845.4,8159.9,8347.8,8872.2,9079.7,9484.8,9922.4,10313.1,10710.2

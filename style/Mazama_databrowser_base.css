@@ -1,0 +1,246 @@
+/* RESET .................................................................... */
+
+/* removed ul ol li dl dt dd from this list */
+
+html,body,div,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input {
+  margin: 0;
+  padding: 0;
+}
+fieldset,img {
+  border: none; 
+}
+h1 {
+  font: 120%;
+  font-weight: bold;
+  padding: 5px 0;
+}
+h2 {
+  font: 100%;
+  font-weight: bold;
+  padding: 5px 0;
+}
+h3,h4,h5,h6 {
+  font-weight: bold;
+}
+p {
+  padding: 0.5em 0 0 0;
+  line-height: 1.5;
+}
+dt {
+  padding: 0.5em 0 0 0;
+  font-weight: bold;
+}
+dd {
+  line-height: 1.5;
+}
+li {
+  padding: 0.2em 0 0 0;
+}
+
+/* BODY & CONTAINER ......................................................... */
+
+body {
+  background: #222 url(./images/bodybg.png) repeat-x fixed top center;
+  color: #222;
+  font: 76%/1.5 Verdana,Arial,Helvetica,sans-serif;
+}
+
+#container {
+  background: #fff;
+  margin: auto;
+  width: 900px;
+}
+
+/* HEADER ....................................................................*/
+
+#header {
+  font: 30px Georgia,Verdana,Arial,Helvetica,sans-serif;
+  height: 75px;
+  margin: 0 10px;
+  background: #fff url(./images/headers/h3_780.jpg) repeat-x top left;
+  text-align: left;
+}
+
+#title {
+  margin-top: 30px;
+  margin-left: 13px;
+  position: absolute;
+  color: #fff;
+  background-color: transparent;
+  cursor: default;
+}
+
+#title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* NAVBAR .....................................................................*/
+
+#navigation {
+  text-align:right;
+  background-color:#fff;
+  color:#fff;
+  margin:auto;
+  font: 1em trebuchet ms,verdana,bitstream vera sans,sans-serif;
+  cursor:default;
+  padding: 0 10px 5px 10px;
+}
+
+#navigation div.br{background:#222 url(./images/corners/br.gif) no-repeat bottom right;}
+#navigation div.bl{background:transparent url(./images/corners/bl.gif) no-repeat bottom left; padding: 5px 15px;}
+
+a#databrowserTitle {
+  float: left;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: #c84;
+  text-decoration: none;
+}
+a#databrowserTitle:hover {
+  color: #fff;
+}
+a#databrowserTitle.this_page {
+  color: #fff;
+  text-decoration: none;
+}
+a#databrowserTitle.this_page:hover {
+  cursor: default;
+}
+#navlist {
+  display: inline;
+  list-style-type:none;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+}
+#navlist li {
+  display:inline;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+#navlist li a {
+  color: #c84;
+  text-decoration: none;
+}
+#navlist li a:hover {
+  color:#fff;
+}
+#navlist a.this_page {
+  color: #fff;
+  text-decoration: none;
+}
+#navlist a.this_page:hover {
+  cursor: default;
+}
+
+/* CONTENT ...................................................................*/
+
+#content {
+  font: 1em/1.2 Verdana,Arial,Helvetica,sans-serif;
+  margin: 10px;
+}
+
+#content div { 
+  margin: 0 10px 10px 10px;
+}
+
+#content h3, #content h4, #content h5, #content h6 {
+  margin: 0 0 0 10px;
+  font-weight: bold;
+}
+
+#content .level-3 {
+  padding: 0 0 0 10px;
+}
+
+#content .level-4 {
+  padding: 0 0 0 20px;
+}
+
+/* INVITATION ................................................................*/
+
+div.invitation {
+  /* padding: 0 0 0 10px; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* PLOT ......................................................................*/
+
+#plot_div {
+  background-color: #FFF;
+  padding: 0;
+  border: 0;
+}
+
+#plot {
+  width: 500px;
+  height: 500px;
+}
+
+#pdf_div {
+  text-align: center;
+}
+
+/* CONTROLS ..................................................................*/
+
+#controls_div { 
+  padding: 5px 10px;
+  vertical-align: top; 
+  width: 370px; /* #container width - #plot width - ~30px */
+}
+
+#controls_div div { 
+  padding: 5px 0; 
+}
+
+#controls_div label {
+  padding: 0 0 5px 0;
+  color: #A62;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+#controls_div select {
+  display: block;
+}
+
+#advanced_controls {
+  visibility:  hidden;
+}
+
+/* FOOTER ...................................................................*/
+
+#footer {
+  background: #FFF;
+  color: #FFF;
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+#footer span {
+}
+
+#footer #slogan {
+  float: right;
+}
+
+/* Mazama Science link */
+#footer a.mazama-science {
+  font-variant: small-caps;
+  color: #c84;
+  text-decoration: none;
+}
+#footer a.mazama-science:hover {
+  color: #fff;
+}
+
+/* dark '#222' rounded corners */
+#footer div.tl{background:#222 url(./images/corners/tl.gif) no-repeat top left;}
+#footer div.tr{background:transparent url(./images/corners/tr.gif) no-repeat top right;}
+#footer div.br{background:transparent url(./images/corners/br.gif) no-repeat bottom right;}
+#footer div.bl{background:transparent url(./images/corners/bl.gif) no-repeat bottom left; padding: 5px 15px;}
+
+

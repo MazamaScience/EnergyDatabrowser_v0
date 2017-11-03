@@ -1,0 +1,81 @@
+North Sea
+Caribbean
+Persian Gulf
+West Africa
+World
+Former Soviet Union
+Europe (-FSU)
+Europe (+FSU)
+OPEC
+OPEC-10
+Non-OPEC
+OECD
+G7
+O5
+G7 + O5
+Belgium and Luxembourg
+North America
+S. & Cent. America
+Europe
+Middle East
+Africa
+Asia-Pacific
+
+Coal
+Oil
+Natural Gas
+Nuclear Energy
+Hydropower
+All
+Consumption
+Production
+million tonnes per year
+million tonnes oil equivalent per year
+million barrels per day
+billion cubic feet per day
+billion cubic meters per year
+Terawatt hours per year
+Exajoules per year
+
+MZM_main1
+MZM_main2
+MZM_main3
+Data: BP Statistical Review 2008    Graphic: mazamascience.com
+Year
+MZM_text_units
+Consumption
+Production
+the Imports
+the Exports
+2007
+consumption increased by
+consumption decreased by
+production increased by
+production decreased by
+imports increased by
+imports decreased by
+exports increased by
+exports decreased by
+* no data available
+* minimum value
+No data available.
+MZM_country
+earned
+spent
+billion
+no data
+net zero
+coal
+oil
+gas
+nuclear power
+hydropower
+US
+World
+% of total
+Total energy consumed increased by
+Total energy consumed decreased by
+Total energy produced increased by
+Total energy produced decreased by
+Percent contribution from each source.
+( 38% efficiency )

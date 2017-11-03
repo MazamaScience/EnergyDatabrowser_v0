@@ -1,0 +1,198 @@
+################################################################################
+# Thank you for helping to translate the text strings used in the "Energy
+# Trends" databrowser at http://mazamascience.com/OilExport
+#
+# Plots from this databrowser are often seen at http://theoildrum.com
+#
+# All that is required is that you translate the text strings in quotes into
+# appropiate words and phrases for your language and culture.  (Please do not
+# just run this file through Google translate.  We could have done that.)
+#
+# We hope that you are familiar with issues surrounding fossil fuel depletion
+# and will provide an appropriate translation of the necessary technical
+# terms.
+# 
+# Items that begin with HTML_ will be used in the user interface.
+#
+# Items that begin with TXT_ will be used for plot annotations as well as in a
+# few places in the user interface.
+################################################################################
+
+
+################################################################################
+# The following phrases require some creativity on you part.  Please come up
+# with a title and invitation that are resonant and enticing within your
+# cultural context.  Nothing too wild, just 'catchy'.
+################################################################################
+
+HTML_DATABROWSER_TITLE = "Energy Export databrowser"
+HTML_INVITATION = "Explore timelines of fossil fuel use in over 100 nations and regions"
+HTML_EXPORTS_TITLE = "Explore timelines of imports and exports."
+HTML_SOURCES_TITLE = "Explore the evolution of energy sources."
+
+################################################################################
+#  User Interface text for everything up to the country selector
+################################################################################
+HTML_KEYWORDS = "peak oil, export land model, energy export, oil, petroleum, gas, coal, export, data, British Petroleum, Statistical Review"
+HTML_DATA = "Data"
+HTML_ABOUT = "About"
+HTML_EXPORTS = "Import / Export"
+HTML_SOURCES = "All Fuels"
+HTML_BP_STAT_REVIEW = "BP Statistical Review 2010"
+
+################################################################################
+#  User Interface text for the country selector
+#
+#  NOTE:  We use the python babel module to generate individual country names.
+################################################################################
+HTML_COUNTRY_LABEL = "Country / Group:"
+HTML_OPTGROUP_GROUPS = "Groups of Nations"
+HTML_OPTGROUP_OIL_PRODUCING = "Oil Producing Regions"
+HTML_OPTGROUP_NA = "North America"
+HTML_OPTGROUP_SA = "South America"
+HTML_OPTGROUP_EE = "Europe and Eurasia"
+HTML_OPTGROUP_ME = "Middle East"
+HTML_OPTGROUP_AF = "Africa"
+HTML_OPTGROUP_AP = "Asia-Pacific"
+HTML_TNA = "Total North America"
+HTML_TSCA = "Total S. and Cent. America"
+HTML_TEE = "Total Europe and Eurasia"
+HTML_TME = "Total Middle East"
+HTML_TAF = "Total Africa"
+HTML_TAP = "Total Asia-Pacific"
+
+################################################################################
+#  User Interface text for the plot options
+################################################################################
+HTML_SHOW_OPTS = "Show Options"
+HTML_HIDE_OPTS = "Hide Options"
+HTML_SHOWMAP = "show map"
+HTML_SCALING_AUTO_TITLE = "automatic scaling"
+HTML_SCALING_AUTO = "auto"
+HTML_SCALING_US_TITLE = "scale to US consumption"
+HTML_SCALING_US = "US"
+HTML_SCALING_WORLD_TITLE = "scale to world consumption"
+HTML_SCALING_WORLD = "world"
+HTML_PERCAPITA = "per capita"
+
+################################################################################
+#  User Interface text for the footer
+################################################################################
+HTML_DIY = "Data - Information - Knowledge"
+HTML_HOSTEDBY = "Hosted by"
+HTML_TRANSLATION_CREDIT = "English translation by Jonathan Callahan"
+
+################################################################################
+#  Plot and UI text for resources
+################################################################################
+TXT_RESOURCE = "Resource"
+TXT_COAL = "Coal"
+TXT_OIL = "Oil"
+TXT_NATURAL_GAS = "Nat. Gas"
+TXT_GAS = "Gas"
+TXT_NUCLEAR = "Nuclear"
+TXT_HYDROPOWER = "Hydropower"
+TXT_HYDRO = "Hydro"
+TXT_ALL = "All"
+
+################################################################################
+#  Plot and UI text for units
+################################################################################
+TXT_UNITS = "Units"
+TXT_UNITS_TITLE = "Units"
+TXT_MTOE_TITLE = "million tonnes oil equivalent per year"
+TXT_MTOE = "mtoe"
+TXT_MTO_TITLE = "million tonnes per year"
+TXT_MTO = "mto"
+TXT_BBL_TITLE = "million barrels per day"
+TXT_BBL = "bbl"
+TXT_FT3_TITLE = "billion cubic feet per day"
+TXT_FT3 = "ft3"
+TXT_M3_TITLE = "billion cubic meters per year"
+TXT_M3 = "m3"
+TXT_TWH_TITLE = "terawatt hours per year"
+TXT_TWH = "twh"
+TXT_J_TITLE = "Exajoules per year"
+TXT_J = "J"
+
+
+################################################################################
+#  Plot annotation text for special regions
+################################################################################
+TXT_NSE = "North Sea"
+TXT_CRB = "Caribbean"
+TXT_PRG = "Persian Gulf"
+TXT_WAF = "West Africa"
+TXT_WORLD = "World"
+TXT_FSU = "Former Soviet Union"
+TXT_EU0 = "Europe (-FSU)"
+TXT_EU1 = "Europe (+FSU)"
+TXT_EU2 = "Eurozone"
+TXT_OPEC = "OPEC"
+TXT_OPEC10 = "OPEC-10"
+TXT_GCC = "Gulf Cooperation Council"
+TXT_GECF = "Gas Exporting Countries"
+TXT_GECF11 = "GECF-11"
+TXT_NON_OPEC = "Non-OPEC"
+TXT_OECD = "OECD"
+TXT_G7 = "G7"
+TXT_O5 = "O5"
+TXT_G75 = "G7 + O5"
+TXT_BELU = "Belgium and Luxembourg"
+TXT_TNA = "North America"
+TXT_TSCA = "S. & Cent. America"
+TXT_TEE = "Europe"
+TXT_TME = "Middle East"
+TXT_TAF = "Africa"
+TXT_TAP = "Asia-Pacific"
+
+################################################################################
+#  Plot annotation text for titles, labels, axes and everything else
+################################################################################
+TXT_SUBTITLE = "Data: BP Statistical Review 2010    Graphic: mazamascience.com"
+TXT_YEAR = "Year"
+TXT_FROMTO = "2009"
+TXT_NET_IMPORTS = "net Imports"
+TXT_NET_EXPORTS = "net Exports"
+TXT_CONSUMPTION_INCREASED = "consumption increased by"
+TXT_CONSUMPTION_DECREASED = "consumption decreased by"
+TXT_PRODUCTION_INCREASED = "production increased by"
+TXT_PRODUCTION_DECREASED = "production decreased by"
+TXT_IMPORTS_INCREASED = "imports increased by"
+TXT_IMPORTS_DECREASED = "imports decreased by"
+TXT_EXPORTS_INCREASED = "exports increased by"
+TXT_EXPORTS_DECREASED = "exports decreased by"
+TXT_CONSUMPTION = "Consumption"
+TXT_PRODUCTION = "Production"
+TXT_MANUFACTURE = "Production" # For Russian coal/oil/gas production
+TXT_GENERATION = "Production"  # For Russian electricity production
+TXT_NOTE_NODATA = "* no data available"
+TXT_NOTE_MINVALUE = "* minimum value"
+TXT_MSG_NODATA = "No data available"
+TXT_EARNED = "earned"
+TXT_SPENT = "spent"
+TXT_BILLION = "billion"
+TXT_MISSING = "no data"
+TXT_NET_0 = "net zero"
+TXT_COAL = "coal"
+TXT_OIL = "oil"
+TXT_GAS = "gas"
+TXT_NUCLEAR = "nuclear"
+TXT_HYDRO = "hydro"
+TXT_US = "US"
+TXT_WORLD = "World"
+TXT_PERCENT = "% of total"
+TXT_ENERGY_CONSUMED_INCREASED = "Total energy consumed increased by"
+TXT_ENERGY_CONSUMED_DECREASED = "Total energy consumed decreased by"
+TXT_ENERGY_PRODUCED_INCREASED = "Total energy produced increased by"
+TXT_ENERGY_MANUFACTURED_INCREASED = "Total energy produced increased by"
+TXT_ENERGY_GENERATED_INCREASED = "Total energy produced increased by"
+TXT_ENERGY_PRODUCED_DECREASED = "Total energy produced decreased by"
+TXT_ENERGY_MANUFACTURED_DECREASED = "Total energy produced decreased by"
+TXT_ENERGY_GENERATED_DECREASED = "Total energy produced decreased by"
+TXT_PERCENT_TITLE = "Percent contribution from each source."
+TXT_EFFICIENCY = "( 38% efficiency )"
+
+################################################################################
+# End of file
+################################################################################

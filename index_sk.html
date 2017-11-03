@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="ropný zlom, model vývozu krajiny, vývoz energie, ropa, nafta, plyn, uhlie, vývoz, údaje, British Petroleum, Štatistický prehľad" />
+  <meta name="description" content="Preskúmajte históriu spotreby fosílnych palív vo viac ako 100 krajinách a oblastiach." />
+  <meta name="author" content="mazamascience.com" />
+
+  <title>Energia na rozcestí</title>
+
+  <style type="text/css">@import url("style/Mazama_databrowser_base.css");</style>
+  <style type="text/css">@import url("style/OilExport.css");</style>
+
+  <script type="text/javascript" src="behavior/prototype.js"></script>
+  <script type="text/javascript" src="behavior/effects.js"></script>
+  <script type="text/javascript" src="behavior/OilExport.js"></script>
+
+</head> 
+
+<body>
+
+<div id="container">
+
+  <div id="header">
+  </div>
+      
+  <div id="navigation">
+    <div class="br"><div class="bl">
+      <a id="databrowserTitle" class="this_page">Energia na rozcestí</a>
+      <ul id="navlist"><!-- menu -->
+         <li><a href="data.html">Údaje</a></li>
+         <li><a href="about.html">O nás</a></li>
+       </ul>
+    </div></div>
+  </div>
+
+  <div id="invitation_div" class="invitation">
+    <span id="invitation">
+      Preskúmajte históriu spotreby fosílnych palív vo viac ako 100 krajinách a oblastiach.
+    </span>
+  </div>
+
+  <div id="databrowser">
+    <table>
+      <tbody>
+        <tr>
+
+          <td id="controls_td">
+
+            <div id="plottype_div">
+              <ul id="plottype_tabs" class="subsection_tabs">
+                <li class="tab">
+                  <a id="Exports" class="selected"
+                     title="Preskúmajte históriu vývozu a dovozu.">Vývoz/Dovoz</a>
+                </li>
+                <li class="tab">
+                  <a id="Sources"
+                     title="Preskúmajte vývoj zdrojov energie.">Všetky palivá</a>
+                </li>
+              </ul>
+            </div> <!-- END of plottype_div -->
+
+            <div id="controls_div">
+              <form id="controls_form" name="controls_form">
+
+                <input id="language" type="hidden" name="language" value="sk">
+                <input id="plottype" type="hidden" name="plottype" value="Exports">
+                <input id="datasource" type="hidden" name="datasource" value="BP_2012">
+
+                <div id="radio_table_div">
+                  <table class="layout">
+                    <tbody>
+
+                      <tr id="data_row">
+                        <td class="label_td">
+                          <label>Data:</label>
+                        </td>
+                        <td>
+                          <span>Štatistický prehľad BP 2012</span>
+                        </td>
+                      </tr>
+
+                      <tr id="fuel_row">
+                        <td class="label_td">
+                          <label class="radio_label">Resource:</label>
+                        </td>
+                        <td>
+                          <span id="coal_span" class="radio_span">
+                            <input type="radio" name="fuel" id="coal" value="coal" />
+                            <span>Uhlie</span>
+                          </span>
+                          <span id="oil_span" class="radio_span selected">
+                            <input class="selected" checked="checked" type="radio" name="fuel" id="oil" value="oil" />
+                            <span>Ropa</span>
+                          </span>
+                          <span id="gas_span" class="radio_span">
+                            <input type="radio" name="fuel" id="gas" value="gas" />
+                            <span>Plyn</span>
+                          </span>
+                          <br>
+                          <span id="nuclear_span" class="radio_span">
+                            <input type="radio" name="fuel" id="nuclear" value="nuclear" />
+                            <span>Jadro</span>
+                          </span>
+                          <span id="hydro_span" class="radio_span">
+                            <input type="radio" name="fuel" id="hydro" value="hydro" />
+                            <span>Voda</span>
+                          </span>
+                          <span id="all_span" class="radio_span">
+                            <input type="radio" name="fuel" id="all" value="all" />
+                            <span>Všetko</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr id="units_row">
+                        <td class="label_td">
+                          <label class="radio_label">Units:</label>
+                        </td>
+                        <td>
+                          <span id="bbl_span" class="radio_span selected" title="milióny barelov za deň">
+                            <input type="radio" checked="checked" name="units" id="bbl" value="bbl" />
+                            <span>bbl</span>
+                          </span>
+                          <span id="ft3_span" class="radio_span" title="miliárd kubických stôp za deň">
+                            <input type="radio" name="units" id="ft3" value="ft3" />
+                            <span>ft</span>
+                          </span>
+                          <span id="m3_span" class="radio_span" title="miliárd kubických metrov za rok">
+                            <input type="radio" name="units" id="m3" value="m3" />
+                            <span>m</span>
+                          </span>
+                          <span id="twh_span" class="radio_span" title="Terawatt-hodín za rok">
+                            <input type="radio" name="units" id="twh" value="twh" />
+                            <span>twh</span>
+                          </span>
+                          <br>
+                          <span id="mtoe_span" class="radio_span" title="milióny ton ekv. ropy za rok">
+                            <input type="radio" name="units" id="mtoe" value="mtoe" />
+                            <span>mtoe</span>
+                          </span>
+                          <span id="joule_span" class="radio_span" title="Exajoulov za rok">
+                            <input type="radio" name="units" id="joule" value="joule" />
+                            <span>J</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div id="countryID_div">
+                  <label for="countryID">Krajina / Skupina:</label>
+
+
+        
+                  <select id="countryID" name="countryID">
+
+                    <optgroup label="Skupina krajín">
+                      <option selected value="MZM_WORLD">Svet</option>
+                      <option value="MZM_FSU">Bývalý Sovietsky zväz</option>
+                      <option value="MZM_EU0">Európa (-BSZ)</option>
+                      <option value="MZM_EU1">Európa (+BSZ)</option>
+                      <option value="MZM_OPEC10">OPEC-10</option>
+                      <option value="MZM_OPEC">OPEC</option>
+                      <option value="MZM_NON_OPEC">Mimo-OPEC</option>
+                      <option value="MZM_OECD">OECD</option>
+                      <option value="MZM_G7">G7</option>
+                      <option value="MZM_O5">O5</option>
+                      <option value="MZM_G75">G7 + O5</option>
+                    </optgroup>
+
+                    <optgroup label="Regióny ťažiace ropu">
+                      <option value="MZM_NSE">Severné more</option>
+                      <option value="MZM_CRB">Karibik</option>
+                      <option value="MZM_PRG">Perzský záliv</option>
+                      <option value="MZM_WAF">Západná Afrika</option>
+                    </optgroup>
+
+                    <optgroup label="Severná Amerika">
+                      <option value="MZM_TNA">Severná Amerika</option>
+                      <option value="CA">Kanada</option>
+                      <option value="MX">Mexiko</option>
+                      <option value="US">Spojené štáty</option>
+                    </optgroup>
+
+                    <optgroup label="Juž. a Str. Amerika">
+                      <option value="MZM_TSCA">Juž. a Str. Amerika</option>
+                      <option value="AR">Argentína</option>
+                      <option value="BO">Bolívia</option>
+                      <option value="BR">Brazília</option>
+                      <option value="CL">Čile</option>
+                      <option value="EC">Ekvádor</option>
+                      <option value="CO">Kolumbia</option>
+                      <option value="PE">Peru</option>
+                      <option value="TT">Trinidad a Tobago</option>
+                      <option value="VE">Venezuela</option>
+                    </optgroup>
+
+                    <optgroup label="Európa a Euroázia">
+                      <option value="MZM_TEE">Európa</option>
+                      <option value="AZ">Azerbajdžan</option>
+                      <option value="MZM_BELU">Belgicko & Luxembursko</option>
+                      <option value="BY">Bielorusko</option>
+                      <option value="BG">Bulharsko</option>
+                      <option value="CZ">Česká republika</option>
+                      <option value="DK">Dánsko</option>
+                      <option value="FI">Fínsko</option>
+                      <option value="FR">Francúzsko</option>
+                      <option value="GR">Grécko</option>
+                      <option value="NL">Holandsko</option>
+                      <option value="IE">Írsko</option>
+                      <option value="IS">Island</option>
+                      <option value="KZ">Kazachstan</option>
+                      <option value="LT">Litva</option>
+                      <option value="HU">Maďarsko</option>
+                      <option value="DE">Nemecko</option>
+                      <option value="NO">Nórsko</option>
+                      <option value="PL">Poľsko</option>
+                      <option value="PT">Portugalsko</option>
+                      <option value="AT">Rakúsko</option>
+                      <option value="RO">Rumunsko</option>
+                      <option value="RU">Ruská federácia</option>
+                      <option value="SK">Slovenská republika</option>
+                      <option value="ES">Španielsko</option>
+                      <option value="GB">Spojené kráľovstvo</option>
+                      <option value="CH">Švajčiarsko</option>
+                      <option value="SE">Švédsko</option>
+                      <option value="IT">Taliansko</option>
+                      <option value="TR">Turecko</option>
+                      <option value="TM">Turkménsko</option>
+                      <option value="UA">Ukrajina</option>
+                      <option value="UZ">Uzbekistan</option>
+                    </optgroup>
+
+                    <optgroup label="Stredný Východ">
+                      <option value="MZM_TME">Stredný Východ</option>
+                      <option value="BH">Bahrajn</option>
+                      <option value="IQ">Irak</option>
+                      <option value="IR">Irán</option>
+                      <option value="YE">Jemen</option>
+                      <option value="QA">Katar</option>
+                      <option value="KW">Kuvajt</option>
+                      <option value="OM">Omán</option>
+                      <option value="SA">Saudská Arábia</option>
+                      <option value="AE">Spojené arabské emiráty</option>
+                      <option value="SY">Sýrska arabská republika</option>
+                    </optgroup>
+
+                    <optgroup label="Afrika">
+                      <option value="MZM_TAF">Afrika</option>
+                      <option value="DZ">Alžírsko</option>
+                      <option value="AO">Angola</option>
+                      <option value="TD">Čad</option>
+                      <option value="EG">Egypt</option>
+                      <option value="GA">Gabon</option>
+                      <option value="ZA">Južná Afrika</option>
+                      <option value="CM">Kamerun</option>
+                      <option value="CG">Kongo</option>
+                      <option value="LY">Lýbijská arabská džamahírija</option>
+                      <option value="NG">Nigéria</option>
+                      <option value="GQ">Rovníková Guinea</option>
+                      <option value="SD">Sudán</option>
+                      <option value="TN">Tunisko</option>
+                      <option value="ZW">Zimbabwe</option>
+                    </optgroup>
+
+                    <optgroup label="Ázia-Pacifik">
+                      <option value="MZM_TAP">Ázia-Pacifik</option>
+                      <option value="AU">Austrália</option>
+                      <option value="BD">Bangladéš</option>
+                      <option value="BN">Brunej</option>
+                      <option value="CN">Čína</option>
+                      <option value="PH">Filipíny</option>
+                      <option value="HK">Hong Kong S.A.R. Číny</option>
+                      <option value="IN">India</option>
+                      <option value="ID">Indonézia</option>
+                      <option value="JP">Japonsko</option>
+                      <option value="KR">Kórea, Južná</option>
+                      <option value="MM">Mjanmarsko</option>
+                      <option value="MY">Malajzia</option>
+                      <option value="NZ">Nový Zéland</option>
+                      <option value="PK">Pakistan</option>
+                      <option value="SG">Singapur</option>
+                      <option value="TW">Tajwan</option>
+                      <option value="TH">Thajsko</option>
+                      <option value="VN">Vietnam</option>
+                    </optgroup>
+
+                  </select>
+
+        
+                </div> <!-- countryID_div -->
+        
+                <div id="advanced_options_button_div">
+                  <button id="advanced_options" type="button">Ukáž možnosti</button>
+                </div>
+
+                <div id="advanced_options_div">
+
+                  <div id="conprod_div" class="Sources">
+                    <span id="consumption_span" class="radio_span">
+                      <input checked="checked" type="radio" name="conprod" id="consumption" value="consumption" />
+                      <span>spotreba</span>
+                    </span>
+                    <span id="production_span" class="radio_span">
+                      <input type="radio" name="conprod" id="production" value="production" />
+                      <span>produkcia</span>
+                    </span>
+                  </div>
+
+                  <div id="percent_div" class="Sources">
+                    <span id="percent_span">
+                      <input type="checkbox" name="percent" id="percent" value="pct" />
+                      <label class="checkbox-label" for="percent">percento</label>
+                    </span>
+                  </div>
+
+                  <div id="showmap_div" class="Exports">
+                    <span id="showmap_span">
+                      <input checked="checked" type="checkbox" name="showmap" id="showmap" value="M" />
+                      <label class="checkbox-label" for="showmap">Ukáž mapu</label>
+                    </span>
+                  </div>
+
+                  <div id="yscalecode_div" class="Exports">
+                    <label class="radio_label">škála osy ypsilon:</label>
+                    <span id="y_auto_span" class="radio_span selected">
+                      <input checked="checked" type="radio" name="yscalecode" id="y_auto" value="auto" />
+                      <span title="automatické škálovanie">auto</span>
+                    </span>
+                    <span id="y_us_span" class="radio_span">
+                      <input type="radio" name="yscalecode" id="y_us" value="us" />
+                      <span title="škálovanie podľa spotreby USA">USA</span>
+                    </span>
+                    <span id="y_world_span" class="radio_span">
+                      <input type="radio" name="yscalecode" id="y_world" value="world" />
+                      <span title="škálovanie podľa spotreby sveta">svet</span>
+                    </span>
+                  </div>
+
+<!--
+                  <div id="percaptia_div">
+                    <span id="percapita_span">
+                      <input type="checkbox" name="percapita" id="percapita" value="P" />
+                      <label class="checkbox-label" for="percapita">na osobu</label>
+                    </span>
+                  </div>
+-->
+                </div>
+
+              </form>
+            </div> <!-- END of controls_div -->
+
+            <div id="Feedjit">
+              <table id="Feedjit_outer_table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <script type="text/javascript" 
+                              src="http://feedjit.com/map/?bc=FFFFFF&amp;tc=494949&amp;brd1=336699&amp;lnk=494949&amp;hc=336699&amp;dot=FF0000"></script>
+                      <noscript>
+                        <a href="http://feedjit.com/">Feedjit Live Blog Stats</a>
+                      </noscript>
+                    </td>
+                    <td>
+                      <img id="spinner" src="style/images/spinner.gif" />
+                    </span>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!-- END of Feedjit -->
+
+          </td> <!-- END of controls_td -->
+
+          <td id="plot_td">
+
+            <div id="plot_div">
+              <div>
+                <img id="plot" src="/OilExport/output_sk/Exports_BP_2012_oil_bbl_MZM_WORLD_MZM_NONE_auto_M.png" />
+              </div>
+              <div id="pdf_div">
+                <a id="pdf" href="/OilExport/output_sk/Exports_BP_2012_oil_bbl_MZM_WORLD_MZM_NONE_auto_M.pdf">pdf</a>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- End of databrowser div-->
+
+  <div id="footer"><div class="tl"><div class="tr"><div class="br"><div class="bl">
+    <span id="slogan">Údaje - Informácie - Vedomosti</span>
+    <span>
+      Hosted by <a class="mazama-science" href="http://mazamascience.com">Mazama Science</a>
+    </span>
+  </div></div></div></div></div>
+
+  <div id="languages">
+    <a id="Deutsch" class="language" href="index_de.html">Deutsch</a>
+    <a id="English" class="language" href="index.html">English</a>
+    <a id="Español" class="language" href="index_es.html">Español</a>
+    <a id="Français" class="language" href="index_fr.html">Français</a>
+    <a id="Italiano" class="language" href="index_it.html">Italiano</a>
+    <a id="Nederlands" class="language" href="index_nl.html">Nederlands</a>
+    <a id="Slovenčina " class="language" href="index_sk.html">Slovenčina</a>
+    <a id="Svensk" class="language" href="index_sv.html">Svensk</a>
+  </div>
+
+  <div id="translation_credit">
+    <span>
+      Do slovenčiny preložil Alexander Ač.
+    </span>
+  </div>
+
+</div>
+  
+</body>
+</html>

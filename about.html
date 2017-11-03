@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en">
+
+<head>
+
+  <title>About the Energy Export Databrowser</title>
+
+  <meta name="keywords" content="coal, oil, gas, petroleum, peak oil, energy export, energy security, oil,
+                                 energy, import, export, data, British Petroleum, Statistical Review" />
+  <meta name="description" content="About the Energy Export Databrowser." />
+  <meta name="author" content="mazamascience.com" />
+
+  <script type="text/javascript" src="./behavior/prototype.js"></script>
+  <script type="text/javascript" src="./behavior/ShowHide.js"></script>
+
+  <link rel="stylesheet" href="style/Mazama_databrowser_base.css">
+  <link rel="stylesheet" href="style/ShowHide.css">
+  <link rel="stylesheet" href="style/OilExport.css">
+
+</head> 
+
+<body>
+
+<div id="container">
+
+  <div id="header">
+  </div>
+      
+  <div id="navigation">
+    <div class="br"><div class="bl">
+      <a id="databrowserTitle" href="index.html">Energy Export Databrowser</a>
+      <ul id="navlist"><!-- menu -->
+         <li><a href="data.html">Data</a></li>
+         <li><a class="this_page" href="about.html">About</a></li>
+       </ul>
+    </div></div>
+  </div>
+
+  <div id="content">
+
+    <h1>About the Energy Export Databrowser</h1>
+    <div id="overview">
+This page gives advice on using the <a href="http://mazamascience.com/OilExport/">Energy Export Databrowser</a>
+and interpreting results.  You may show or hide any section by clicking on the section header.
+    </div>
+
+    <h2>Background</h2>
+    <div>
+      <p>
+Access to fossil fuels is one of the most important issues of our time.  The world's largest economies
+are extremely dependent upon imported supplies of oil and gas.  Understanding who produces and
+consumes oil, coal and natural gas is critical today and will remain so in the years ahead.
+      </p>
+      <p>
+This databrowser uses data from the 2012 BP Statistical Review and displays
+coal, oil &amp; natural gas production and consumption timelines for each country in the database
+and several political and geographic groupings of nations.
+Users can dynamically plot import/export curves to get a sense of 
+who the major fossil fuel producers and consumers are and how this has changed in the last four decades.
+      </p>
+    </div>
+
+    <h2 class="trigger">More about databrowsers</h2>
+    <div>
+      <p>
+A databrowser is a web based interface that allows non-technical users to <em>interact</em> with scientific data.
+      </p>
+      <p>
+Making sense of complex datasets depends upon two very different kinds of machines.  Silicon based
+<em>number crunchers</em> (computers) perform complex mathematical calculations at lightning speed with essentially
+zero errors while carbon based <em>pattern recognizers</em> (our brains) detect visual patterns much faster than any computer
+and use these patterns to develop further questions about the data.
+      </p>
+      <p>
+People enjoy looking at informative scientific graphics if the barrier to creating them is low.
+When this happens, our species' extraordinary capabilities as <em>pattern recognizers</em> enable us to convert what we see
+in excellent scientific graphics into a deeper understanding.  The problem in many fields of science is that the barriers
+to creating excellent graphics are discouragingly high.
+      </p>
+      <p>
+A bottleneck exists where information is transferred between number crunchers
+and pattern recognizers.  It can take a large amount of time to organize, format and analyze data before generating
+the graphics that <em>tell the story</em> of the data.  Often, the role of data management and analysis is handed over to 
+computer experts rather than the scientist end users with a real interest in the data.  With no easy way to 
+create the graphics that they need, the ability of scientits, managers and interested members of the public to develop
+their intuition about a dataset is greatly impaired.
+      </p>
+      <p>
+Scientific databrowsers attempt to solve this problem by hiding the details of data management and analysis while 
+providing simple, intuitive interfaces to 
+the kinds of analysis that are appropriate for a particular dataset.  These analyses are typically vetted statistical
+routines that are written in code in such a way as to be driven by input from a web browser user interface.
+In this manner, end users including both experts and non-experts can harness the power of (server side) number crunchers
+as well as their own (client side) pattern recognizers without having to learn the arcana of data management and
+scientific analysis software.
+      </p>
+
+      <h3>Building a databrowser.</h3>
+      <div>
+        <p>
+The process of building a databrowser involves several steps:
+        </p>
+        <ol>
+          <li>cleaning up any problems with the source data so that they are consistent and well organized</li>
+          <li>writing code that allows vetted statistical analyses to be run interactively</li>
+          <li>writing code to create high quality scientific graphics based on the results of the analysis</li>
+          <li>embedding the analysis and visualization code in a web-server based <em>databrowser engine</em></li>
+          <li>creating a user interface that allows users to quickly and easily send requests to the analysis and visualization engine running on the server</li>
+        </ol>
+        <p>
+When properly designed, the code behind a good databrowser can encapsulate a huge amount of <em>institutional memory</em>
+about the scientific process.  Ideally, databrowser graphics should be of high enough quality that they are immediately
+ready to be included in scientific publications.
+        </p>
+      </div>
+
+    </div> <!-- END of 'More about Databrowsers' -->
+
+    <h2 class="trigger">Working with the Energy Export Databrowser</h2>
+    <div>
+
+      <h3>Selecting a Plot Type</h3>
+      <div>
+        <p>
+The databrowser currently supports two distinct plot types:
+        </p>
+        <dl>
+          <dt>Import/Export</dt>
+          <dd>
+Plots the hisorical evolution of production, consumption, imports and exports for a single resource 
+within a nation or group of nations.  Individual nations on the map are colored as importers or exporters.
+Plot options allow user specified scaling to allow for direct comparison between plots.
+          </dd>
+          <dt>All Fuels</dt>
+          <dd>
+Plots the historical contribution of each resource in the database to total energy consumption.  This allows
+users to see the evolution of the energy mix within a nation or group of nations.  Plot
+options allow users to examine production or consumption.
+          </dd>
+        </dl>
+      </div>
+
+      <h3>Selecting a Resource</h3>
+      <div>
+        <p>
+All energy resources from the British Petroleum 2012 Statistical Review are included in the databrowser -- 
+coal, oil, natural gas, nuclear, hydro.
+Clicking on one of the "Resource" radio buttons will access data files for that resource while retaining all other
+user settings.
+        </p>
+        <p>
+It is important to note that the Statistical Review does not contain consumption worksheets for nuclear and hydro power.
+It is assumed that all electricity produced from these resources is used internally.  We are aware that this is a very 
+poor assumption but it is beyond the scope of this dataset to keep track of electricity transfers between nations.
+        </p>
+      </div>
+
+      <h3>Selecting Units</h3>
+      <div>
+        <p>
+The BP 2012 Statistical Review contains separate datasheets for each unit reported.  A scientists we believe this
+to be unnecessary as a change in units <strong>should</strong> only represent a change in scaling.  We have
+observed, however, that things are not so simple.  As our goal is to be as faithful to the BP data management effort
+as possible, we have retained the values found in each datasheet.  This means that the shape of the historical curves displayed
+by the databrowser will change subtly as one switches units.
+        <p>
+<i>If anyone has can explain to us why these differences exist in the database we would love to know!)</i>
+        </p>
+        <p>
+For data comparisons in the "All Fuels" plot type, it is important to be aware of the different assumptions
+in the two available units:
+        </p>
+        <dl>
+          <dt>million tonnes of oil equivalent per year (mtoe)</dt>
+          <dd>
+Data in the nuclear and hydroelectric worksheets are scaled up by a factor of 1/0.38 (=2.63) so as to
+show "the equivalent amount of fossil fuel required to generate the same volume of electricity in a thermal power station".
+          </dd>
+          <dt>Exajoules per year (J)</dt>
+          <dd>
+Data in the nuclear and hydroelectric worksheets are left unscaled so as to
+show the actual amount of 'potentially usable energy' from each source.
+          </dd>
+        </dl>
+        <p>
+For a comparison of power produced from coal or gas fired power plants with power produced from nuclear or hydro power plants,
+it would be best to use units of 'mtoe'.  For a more theoretical exploration of 'energy available' units of 'J' would
+be more appropriate.
+        </p>
+      </div>
+
+      <h3>Selecting Countries / Groups</h3>
+      <div>
+        <p>
+The British Petroleum 2012 Statistical Review breaks out consumption and production data
+by country, continent and a few groupings like 'Former Soviet Union' and 'OPEC'.  In the case
+of countries of the Former Soviet Union, all data prior to 1985 is lumped
+together as 'Former Soviet Union'. This means that individual countries like 'Ukraine' or 
+'Russian Federation' have no production/consumption data prior to 1985.
+        </p>
+        <p>
+The code behind the Energy Export Databrowser makes it possible to calculate consumption/production statistics
+for any combination of countries.  An initial application of this capability is found in the 
+'Interesting Groups' section of the 'Country / Group' selector.  Choosing one of these
+mult-country groups will show the following:
+        </p>
+        <ul>
+          <li>Countries in the map are colored by whether they imported or exported in 2007.</li>
+          <li>The production/consumption graph represents the sum of all countries in the group.</li>
+        </ul>
+        <p>
+  The 'Interesting Groups' section includes the following abbreviations:
+        </p>
+        <dl>
+          <dt>FSU</dt>
+          <dd>Former Soviet Union</dd>
+          <dt>OPEC</dt>
+          <dd>Organization of Petroleum Exporting Countries</dd>
+          <dt>OECD</dt>
+          <dd>Organization for Economic Cooperation and Development</dd>
+          <dt>G7</dt>
+          <dd>US, United Kingdom, France, Germany, Italy, Japan, Canada</dd>
+          <dt>O5</dt>
+          <dd>Brazil, China, Indonesia, India, South Africa</dd>
+        </dl>
+      </div> <!-- END of 'Selecting Countries/Groups' -->
+  
+      <h3>Selecting Plot Options</h3>
+      <div>
+        <p>
+Each plot type has its own set of optional plot settings that allow for modifications unique to that plot type.
+        </p>
+      </div>
+
+    </div> <!-- END of 'Working with the Databrowser' -->
+
+    <h2 class="trigger">Interpreting Results</h2>
+    <div>
+Various interesting patterns appear in the data graphics.  A few interpretations are provided here.
+
+      <h3>Peak Production</h3>
+      <div>
+        <p>
+Uninterrupted by war or political upheaval and developed with the latest technology, the North Sea provides a very
+good example of a 'normal' (almost gaussian) production curve that is now past 'peak' production.
+It is anticipated that annual production volumes will continue to decline barring a dramatic new
+discovery.
+        </p>
+        <img alt="North Sea Oil Production" src="output_en/Exports_BP_2012_oil_bbl_MZM_NSE_MZM_NONE_auto_M.png" />
+      </div>
+  
+      <h3>Export Land Model</h3>
+      <div>
+        <p>
+The 'Export Land Model' proposed by Jeffrey Brown and Samuel Foucher describes how developing
+nations, enriched by oil profits, will grow economically and increase their own consumption
+of energy resources.  Declining production and increasing consumption can rapidly turn an
+exporting nation into one that requires imports as exemplified by ex-OPEC member Indonesia.
+        </p>
+        <img alt="Indonesia Oil Production" src="output_en/Exports_BP_2012_oil_bbl_ID_MZM_NONE_auto_M.png" />
+      </div>
+  
+      <h3>Coal Fired Growth</h3>
+      <div>
+        <p>
+Coal fired power plants are huge contributors to increased levels of CO2 in the atmosphere.  They are also
+engines of growth for developing nations with access to coal.  Coal fired the original Industrial Revolution in the
+British Isles and is now doing the same in many nations in Asia.  The undisputed giant of coal users is China.
+        </p>
+        <img alt="China Energy Consumption" src="output_en/Sources_BP_2012_consumption_joule_CN_MZM_NONE__.png" />
+      </div>
+  
+      <h3>War</h3>
+      <div>
+        <p>
+One of the reasons nations go to war is to gain access to resources.  However, in the case of
+energy resources, the damage to infrastructure inflicted by modern warfare can reduce rather than
+increase access to those resources.  Nowhere is this more true than in Iraq.
+        </p>
+        <ul>
+          <li>Iran-Iraq War (1981-1988)</li>
+          <li>First Gulf War (1990-1991)</li>
+          <li>Sanctions (1991-2003)</li>
+          <li>Iraq War (2003-2011)</li>
+        </ul>
+        <img alt="Iraq Oil Production" src="output_en/Exports_BP_2012_oil_bbl_IQ_MZM_NONE_auto_M.png" />
+      </div>
+  
+      <h3>Domestic Consumption Only</h3>
+      <div>
+        <p>
+In some countries in some years, production and consumption match.  In these cases, the country
+will be colored gray in the map.  This is often seen when looking at Natural Gas which is 
+largely dependent upon pipelines for export.  Until recently, Colombia had no means for exporting
+its Natural Gas and all production was consumed domestically.
+        </p>
+        <img alt="Colombia Nat Gas Production" src="output_en/Exports_BP_2012_gas_m3_CO_MZM_NONE_auto_M.png" />
+      </div>
+  
+    </div> <!-- END of 'interpreting results' -->
+  
+  </div> <!-- content -->
+
+  <div id="footer"><div class="tl"><div class="tr"><div class="br"><div class="bl">
+    <span id="slogan">Data - Information - Knowledge</span>
+    <span>
+      Hosted by <a class="mazama-science" href="http://mazamascience.com">Mazama Science</a>
+    </span>
+  </div></div></div></div></div>
+
+</div>
+  
+</body>
+</html>

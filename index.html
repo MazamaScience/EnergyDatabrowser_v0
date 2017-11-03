@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="peak oil, export land model, energy export, oil, petroleum, gas, coal, export, data, British Petroleum, Statistical Review" />
+  <meta name="description" content="Explore timelines of fossil fuel use in over 100 nations and regions." />
+  <meta name="author" content="mazamascience.com" />
+
+  <title>Energy Export Databrowser</title>
+
+  <style type="text/css">@import url("style/Mazama_databrowser_base.css");</style>
+  <style type="text/css">@import url("style/OilExport.css");</style>
+
+  <script type="text/javascript" src="behavior/prototype.js"></script>
+  <script type="text/javascript" src="behavior/effects.js"></script>
+  <script type="text/javascript" src="behavior/OilExport.js"></script>
+
+<!-- Google Analyitics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22260800-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head> 
+
+<body>
+
+<div id="container">
+
+  <div id="header">
+  </div>
+      
+  <div id="navigation">
+    <div class="br"><div class="bl">
+      <a id="databrowserTitle" class="this_page">Energy Export Databrowser</a>
+      <ul id="navlist"><!-- menu -->
+         <li><a href="data.html">Data</a></li>
+         <li><a href="about.html">About</a></li>
+       </ul>
+    </div></div>
+  </div>
+
+  <div id="invitation_div" class="invitation">
+    <span id="invitation">
+      Explore timelines of energy use in over 100 nations and regions.
+    </span>
+  </div>
+
+  <div id="databrowser">
+    <table>
+      <tbody>
+        <tr>
+
+          <td id="controls_td">
+
+            <div id="plottype_div">
+              <ul id="plottype_tabs" class="subsection_tabs">
+                <li class="tab">
+                  <a id="Exports" class="selected"
+                     title="Explore timelines of imports and exports.">Import/Export</a>
+                </li>
+                <li class="tab">
+                  <a id="Sources"
+                     title="Explore the evolution of energy sources.">All Fuels</a>
+                </li>
+              </ul>
+            </div> <!-- END of plottype_div -->
+
+            <div id="controls_div">
+              <form id="controls_form" name="controls_form">
+
+                <input id="language" type="hidden" name="language" value="en">
+                <input id="plottype" type="hidden" name="plottype" value="Exports">
+                <input id="datasource" type="hidden" name="datasource" value="BP_2012">
+
+                <div id="radio_table_div">
+                  <table class="layout">
+                    <tbody>
+
+                      <tr id="data_row">
+                        <td class="label_td">
+                          <label>Data:</label>
+                        </td>
+                        <td>
+                          <span>BP Statistical Review 2012</span>
+                        </td>
+                      </tr>
+
+                      <tr id="fuel_row">
+                        <td class="label_td">
+                          <label class="radio_label">Resource:</label>
+                        </td>
+                        <td>
+                          <span id="coal_span" class="radio_span">
+                            <input type="radio" name="fuel" id="coal" value="coal" />
+                            <span>Coal</span>
+                          </span>
+                          <span id="oil_span" class="radio_span selected">
+                            <input class="selected" checked="checked" type="radio" name="fuel" id="oil" value="oil" />
+                            <span>Oil</span>
+                          </span>
+                          <span id="gas_span" class="radio_span">
+                            <input type="radio" name="fuel" id="gas" value="gas" />
+                            <span>Gas</span>
+                          </span>
+                          <br>
+                          <span id="nuclear_span" class="radio_span">
+                            <input type="radio" name="fuel" id="nuclear" value="nuclear" />
+                            <span>Nuclear</span>
+                          </span>
+                          <span id="hydro_span" class="radio_span">
+                            <input type="radio" name="fuel" id="hydro" value="hydro" />
+                            <span>Hydropower</span>
+                          </span>
+                          <span id="all_span" class="radio_span">
+                            <input type="radio" name="fuel" id="all" value="all" />
+                            <span>All</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr id="units_row">
+                        <td class="label_td">
+                          <label class="radio_label">Units:</label>
+                        </td>
+                        <td>
+                          <span id="bbl_span" class="radio_span selected" title="million barrels per day">
+                            <input type="radio" checked="checked" name="units" id="bbl" value="bbl" />
+                            <span>bbl</span>
+                          </span>
+                          <span id="ft3_span" class="radio_span" title="billion cubic feet per day">
+                            <input type="radio" name="units" id="ft3" value="ft3" />
+                            <span>ft</span>
+                          </span>
+                          <span id="m3_span" class="radio_span" title="billion cubic meters per year">
+                            <input type="radio" name="units" id="m3" value="m3" />
+                            <span>m</span>
+                          </span>
+                          <span id="twh_span" class="radio_span" title="terawatt hours per year">
+                            <input type="radio" name="units" id="twh" value="twh" />
+                            <span>twh</span>
+                          </span>
+                          <br>
+                          <span id="mtoe_span" class="radio_span" title="million tonnes of oil equivalent per year">
+                            <input type="radio" name="units" id="mtoe" value="mtoe" />
+                            <span>mtoe</span>
+                          </span>
+                          <span id="joule_span" class="radio_span" title="Exajoules per year">
+                            <input type="radio" name="units" id="joule" value="joule" />
+                            <span>J</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div id="countryID_div">
+                  <label for="countryID">Country / Group:</label>
+                  <select id="countryID" name="countryID">
+        
+                    <optgroup label="Groups of Nations">
+                      <option selected value="MZM_WORLD">World</option>
+<!--
+                      <option value="MZM_WORLD1">World (-OECD -FSU)</option>
+-->
+                      <option value="MZM_FSU">Former Soviet Union</option>
+                      <option value="MZM_EU0">Europe (-FSU)</option>
+                      <option value="MZM_EU1">Europe (+FSU)</option>
+                      <option value="MZM_EU2">Eurozone</option>
+                      <option value="MZM_OPEC10">OPEC-10</option>
+                      <option value="MZM_OPEC">OPEC</option>
+                      <option value="MZM_GCC">GCC</option>
+                      <option value="MZM_GECF11">GECF-11</option>
+                      <option value="MZM_GECF">GECF</option>
+                      <option value="MZM_NON_OPEC">Non-OPEC</option>
+                      <option value="MZM_OECD">OECD</option>
+                      <option value="MZM_OECD1">OECD (-USA)</option>
+                      <option value="MZM_G7">G7</option>
+                      <option value="MZM_O5">O5</option>
+                      <option value="MZM_G75">G7 + O5</option>
+                    </optgroup>
+        
+                    <optgroup label="Oil Producing Regions">
+                      <option value="MZM_CRB">Caribbean</option>
+                      <option value="MZM_NSE">North Sea</option>
+                      <option value="MZM_PRG">Persian Gulf</option>
+                      <option value="MZM_WAF">West Africa</option>
+                    </optgroup>
+        
+                    <optgroup label="North America">
+                      <option value="MZM_TNA">Total North America</option>
+                      <option value="CA">Canada</option>
+                      <option value="MX">Mexico</option>
+                      <option value="US">USA</option>
+                    </optgroup>
+        
+                    <optgroup label="South America">
+                      <option value="MZM_TSCA">Total S. & Cent. America</option>
+                      <option value="AR">Argentina</option>
+                      <option value="BO">Bolivia</option>
+                      <option value="BR">Brazil</option>
+                      <option value="CL">Chile</option>
+                      <option value="CO">Colombia</option>
+                      <option value="EC">Ecuador</option>
+                      <option value="PE">Peru</option>
+                      <option value="TT">Trinidad and Tobago</option>
+                      <option value="VE">Venezuela</option>
+                    </optgroup>
+        
+                    <optgroup label="Europe & Eurasia">
+                      <option value="MZM_TEE">Total Europe & Eurasia</option>
+                      <option value="AT">Austria</option>
+                      <option value="AZ">Azerbaijan</option>
+                      <option value="BY">Belarus</option>
+                      <option value="MZM_BELU">Belgium and Luxembourg</option>
+                      <option value="BG">Bulgaria</option>
+                      <option value="CZ">Czech Republic</option>
+                      <option value="DK">Denmark</option>
+                      <option value="FI">Finland</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                      <option value="GR">Greece</option>
+                      <option value="HU">Hungary</option>
+                      <option value="IS">Iceland</option>
+                      <option value="IE">Ireland</option>
+                      <option value="IT">Italy</option>
+                      <option value="KZ">Kazakhstan</option>
+                      <option value="LT">Lithuania</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="NO">Norway</option>
+                      <option value="PL">Poland</option>
+                      <option value="PT">Portugal</option>
+                      <option value="RO">Romania</option>
+                      <option value="RU">Russian Federation</option>
+                      <option value="SK">Slovakia</option>
+                      <option value="ES">Spain</option>
+                      <option value="SE">Sweden</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="TR">Turkey</option>
+                      <option value="TM">Turkmenistan</option>
+                      <option value="UA">Ukraine</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="UZ">Uzbekistan</option>
+                    </optgroup>
+        
+                    <optgroup label="Middle East">
+                      <option value="MZM_TME">Total Middle East</option>
+                      <option value="MZM_GCC">Gulf Cooperation Council</option>
+                      <option value="BH">Bahrain</option>
+                      <option value="IR">Iran</option>
+                      <option value="IQ">Iraq</option>
+                      <option value="IL">Israel</option>
+                      <option value="KW">Kuwait</option>
+                      <option value="OM">Oman</option>
+                      <option value="QA">Qatar</option>
+                      <option value="SA">Saudi Arabia</option>
+                      <option value="SY">Syria</option>
+                      <option value="YE">Yemen</option>
+                      <option value="AE">United Arab Emirates</option>
+                    </optgroup>
+        
+                    <optgroup label="Africa">
+                      <option value="MZM_TAF">Total Africa</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AO">Angola</option>
+                      <option value="CM">Cameroon</option>
+                      <option value="TD">Chad</option>
+                      <option value="CG">Congo</option>
+                      <option value="EG">Egypt</option>
+                      <option value="GQ">Equatorial Guinea</option>
+                      <option value="GA">Gabon</option>
+                      <option value="LY">Libya</option>
+                      <option value="NG">Nigeria</option>
+                      <option value="ZA">South Africa</option>
+                      <option value="SD">Sudan</option>
+                      <option value="TN">Tunisia</option>
+                      <option value="ZW">Zimbabwe</option>
+                    </optgroup>
+        
+                    <optgroup label="Asia-Pacific">
+                      <option value="MZM_TAP">Total Asia-Pacific</option>
+                      <option value="AU">Australia</option>
+                      <option value="BD">Bangladesh</option>
+                      <option value="BN">Brunei</option>
+                      <option value="CN">China</option>
+                      <option value="HK">Hong Kong</option>
+                      <option value="IN">India</option>
+                      <option value="ID">Indonesia</option>
+                      <option value="JP">Japan</option>
+                      <option value="MY">Malaysia</option>
+                      <option value="MM">Myanmar</option>
+                      <option value="NZ">New Zealand</option>
+                      <option value="PK">Pakistan</option>
+                      <option value="PH">Philippines</option>
+                      <option value="SG">Singapore</option>
+                      <option value="KR">South Korea</option>
+                      <option value="TW">Taiwan</option>
+                      <option value="TH">Thailand</option>
+                      <option value="VN">Vietnam</option>
+                    </optgroup>
+        
+                  </select>
+                </div> <!-- countryID_div -->
+        
+                <div id="advanced_options_button_div">
+                  <button id="advanced_options" type="button">Show Plot Options</button>
+                </div>
+
+                <div id="advanced_options_div">
+
+                  <div id="conprod_div" class="Sources">
+                    <span id="consumption_span" class="radio_span">
+                      <input checked="checked" type="radio" name="conprod" id="consumption" value="consumption" />
+                      <span>consumption</span>
+                    </span>
+                    <span id="production_span" class="radio_span">
+                      <input type="radio" name="conprod" id="production" value="production" />
+                      <span>production</span>
+                    </span>
+                  </div>
+
+                  <div id="percent_div" class="Sources">
+                    <span id="percent_span">
+                      <input type="checkbox" name="percent" id="percent" value="pct" />
+                      <label class="checkbox-label" for="percent">percent</label>
+                    </span>
+                  </div>
+
+                  <div id="showmap_div" class="Exports">
+                    <span id="showmap_span">
+                      <input checked="checked" type="checkbox" name="showmap" id="showmap" value="M" />
+                      <label class="checkbox-label" for="showmap">show map</label>
+                    </span>
+                  </div>
+
+                  <div id="yscalecode_div" class="Exports">
+                    <label class="radio_label">y-axis scale:</label>
+                    <span id="y_auto_span" class="radio_span selected">
+                      <input checked="checked" type="radio" name="yscalecode" id="y_auto" value="auto" />
+                      <span title="automatic scaling">auto</span>
+                    </span>
+                    <span id="y_us_span" class="radio_span">
+                      <input type="radio" name="yscalecode" id="y_us" value="us" />
+                      <span title="scale to US consumption">US</span>
+                    </span>
+                    <span id="y_world_span" class="radio_span">
+                      <input type="radio" name="yscalecode" id="y_world" value="world" />
+                      <span title="scale to world consumption">world</span>
+                    </span>
+                  </div>
+
+<!--
+                  <div id="percaptia_div">
+                    <span id="percapita_span">
+                      <input type="checkbox" name="percapita" id="percapita" value="P" />
+                      <label class="checkbox-label" for="percapita">per capita</label>
+                    </span>
+                  </div>
+-->
+                </div>
+
+              </form>
+            </div> <!-- END of controls_div -->
+
+            <div id="Feedjit">
+              <table id="Feedjit_outer_table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <script type="text/javascript" 
+                              src="http://feedjit.com/map/?bc=FFFFFF&amp;tc=494949&amp;brd1=336699&amp;lnk=494949&amp;hc=336699&amp;dot=FF0000"></script>
+                      <noscript>
+                        <a href="http://feedjit.com/">Feedjit Live Blog Stats</a>
+                      </noscript>
+                    </td>
+                    <td>
+                      <img id="spinner" src="style/images/spinner.gif" />
+                    </span>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!-- END of Feedjit -->
+
+          </td> <!-- END of controls_td -->
+
+          <td id="plot_td">
+
+            <div id="plot_div">
+              <div>
+                <img id="plot" src="/OilExport/output_en/Exports_BP_2012_oil_bbl_MZM_WORLD_MZM_NONE_auto_M.png" />
+              </div>
+              <div id="pdf_div">
+                <a id="pdf" href="/OilExport/output_en/Exports_BP_2012_oil_bbl_MZM_WORLD_MZM_NONE_auto_M.pdf">pdf</a>
+              </div>
+            </div>
+
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- End of databrowser div-->
+
+  <div id="footer"><div class="tl"><div class="tr"><div class="br"><div class="bl">
+    <span id="slogan">Data - Information - Knowledge</span>
+    <span>
+      Hosted by <a class="mazama-science" href="http://mazamascience.com">Mazama Science</a>
+    </span>
+  </div></div></div></div></div>
+
+  <div id="languages">
+    <a id="Deutsch" class="language" href="index_de.html">Deutsch</a>
+    <a id="English" class="language" href="index.html">English</a>
+    <a id="Español" class="language" href="index_es.html">Español</a>
+    <a id="Français" class="language" href="index_fr.html">Français</a>
+    <a id="Italiano" class="language" href="index_it.html">Italiano</a>
+    <a id="Nederlands" class="language" href="index_nl.html">Nederlands</a>
+    <a id="Svensk" class="language" href="index_sv.html">Svensk</a>
+  </div>
+
+</div>
+  
+</body>
+</html>

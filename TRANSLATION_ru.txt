@@ -1,0 +1,216 @@
+                                            
+################################################################################
+# Thank you for helping to translate the text strings used in the "Energy
+# Trends" databrowser at http://mazamascience.com/OilExport
+#
+# Plots from this databrowser are often seen at http://theoildrum.com
+#
+# All that is required is that you translate the text strings in quotes into
+# appropiate words and phrases for your language and culture.  (Please do not
+# just run this file through Google translate.  We could have done that.)
+#
+# We hope that you are familiar with issues surrounding fossil fuel depletion
+# and will provide an appropriate translation of the necessary technical
+# terms.
+# 
+# Items that begin with HTML_ will be used in the user interface.
+#
+# Items that begin with TXT_ will be used for plot annotations as well as in a
+# few places in the user interface.
+################################################################################
+
+
+
+
+################################################################################
+# The following phrases require some creativity on you part.  Please come up
+# with a title and invitation that are resonant and enticing within your
+# cultural context.  Nothing too wild, just 'catchy'.
+################################################################################
+
+
+HTML_DATABROWSER_TITLE = "Путеводитель по экспорту энергии"
+HTML_INVITATION = "Исследование динамики использования ископаемого топлива в более чем 100 странах и регионах."
+HTML_EXPORTS_TITLE = "Показать динамику импорта и экспорта."
+HTML_SOURCES_TITLE = "Показать исторический вклад различных источников энергии."
+
+
+################################################################################
+#  User Interface text for everything up to the country selector
+################################################################################
+HTML_KEYWORDS = "пик нефти, модель страны-экспортёра, экспорт энергии, нефть, газ, уголь, экспорт, данные, British Petroleum, статистический отчёт"
+HTML_DATA = "Данные"
+HTML_ABOUT = "О сайте"
+HTML_EXPORTS = "Импорт / Экспорт"
+HTML_SOURCES = "Все виды топлива"
+HTML_BP_STAT_REVIEW = "Статистический отчёт компании BP за 2010 г."
+
+
+################################################################################
+#  User Interface text for the country selector
+#
+#  NOTE:  We use the python babel module to generate individual country names.
+################################################################################
+HTML_COUNTRY_LABEL = "Страна / Регион:"
+HTML_OPTGROUP_GROUPS = "Группы стран"
+HTML_OPTGROUP_OIL_PRODUCING = "Нефтедобывающие регионы"
+HTML_OPTGROUP_NA = "Северная Америка"
+HTML_OPTGROUP_SA = "Южная Америка"
+HTML_OPTGROUP_EE = "Европа и Евразия"
+HTML_OPTGROUP_ME = "Ближний Восток"
+HTML_OPTGROUP_AF = "Африка"
+HTML_OPTGROUP_AP = "Азия и Тихий Океан"
+HTML_TNA = "Вся Северная Америка"
+HTML_TSCA = "Вся Южная и Центральная Америка"
+HTML_TEE = "Вся Европа и Евразия"
+HTML_TME = "Весь Ближний Восток"
+HTML_TAF = "Вся Африка"
+HTML_TAP = "Вся Азия и Тихий Океан"
+
+
+################################################################################
+#  User Interface text for the plot options
+################################################################################
+HTML_SHOW_OPTS = "Показать настройки"
+HTML_HIDE_OPTS = "Спрятать настройки"
+HTML_SHOWMAP = "показывать карту"
+HTML_SCALING_AUTO_TITLE = "автомасштаб"
+HTML_SCALING_AUTO = "авто"
+HTML_SCALING_US_TITLE = "в сравнении с потреблением в США"
+HTML_SCALING_US = "США"
+HTML_SCALING_WORLD_TITLE = "в сравнении с общемировым потреблением"
+HTML_SCALING_WORLD = "весь мир"
+HTML_PERCAPITA = "на душу населения"
+
+
+################################################################################
+#  User Interface text for the footer
+################################################################################
+HTML_DIY = "Данные - Информация - Знание"
+HTML_HOSTEDBY = "Размещено на"
+HTML_TRANSLATION_CREDIT = "Перевод на русский: Syndroma"
+
+
+################################################################################
+#  Plot and UI text for resources
+################################################################################
+TXT_RESOURCE = "Ресурс"
+TXT_COAL = "Уголь"
+TXT_OIL = "Нефть"
+TXT_NATURAL_GAS = "Природный газ"
+TXT_GAS = "Газ"
+TXT_NUCLEAR = "АЭС"
+TXT_HYDROPOWER = "ГЭС"
+TXT_HYDRO = "ГЭС"
+TXT_ALL = "Все"
+
+
+################################################################################
+#  Plot and UI text for units
+################################################################################
+TXT_UNITS = "Единицы"
+TXT_UNITS_TITLE = "Единицы"
+TXT_MTOE_TITLE = "млн. тонн нефтяного экв. в год"
+TXT_MTOE = "т н.э."
+TXT_MTO_TITLE = "млн. тонн в год"
+TXT_MTO = "т"
+TXT_BBL_TITLE = "млн. баррелей в день"
+TXT_BBL = "барр."
+TXT_FT3_TITLE = "млрд. куб. футов в день"
+TXT_FT3 = "фут3"
+TXT_M3_TITLE = "млрд. куб. метров в день"
+TXT_M3 = "м3"
+TXT_TWH_TITLE = "тераватт-часов в год"
+TXT_TWH = "Вт·ч"
+TXT_J_TITLE = "эксаджоулей в год"
+TXT_J = "Дж"
+
+
+
+
+################################################################################
+#  Plot annotation text for special regions
+################################################################################
+TXT_NSE = "Северное море"
+TXT_CRB = "Карибское море"
+TXT_PRG = "Персидский залив"
+TXT_WAF = "Западная Африка"
+TXT_WORLD = "Весь мир"
+TXT_FSU = "Страны бывшего СССР"
+TXT_EU0 = "Европа (-ex-СССР)"
+TXT_EU1 = "Европа (+ex-СССР)"
+TXT_OPEC = "ОПЕК"
+TXT_OPEC10 = "ОПЕК-10"
+TXT_GCC = "Страны ССАГПЗ"
+TXT_GECF = "Страны ФСЭГ"
+TXT_GECF11 = "ФСЭГ-11"
+TXT_NON_OPEC = "Все, кроме ОПЕК"
+TXT_OECD = "ОЭСР"
+TXT_G7 = "G7"
+TXT_O5 = "O5"
+TXT_G75 = "G7 + O5"
+TXT_BELU = "Бельгия и Люксембург"
+TXT_TNA = "Северная Америка"
+TXT_TSCA = "Южная и Центральная Америка"
+TXT_TEE = "Европа"
+TXT_TME = "Ближний Восток"
+TXT_TAF = "Африка"
+TXT_TAP = "Азия и Тихий Океан"
+
+
+################################################################################
+#  Plot annotation text for titles, labels, axes and everything else
+################################################################################
+TXT_SUBTITLE = "Данные: Статистический отчёт компании BP за 2010 г.    Оформление: mazamascience.com"
+TXT_YEAR = "год"
+TXT_FROMTO = "2009"
+TXT_NET_IMPORTS = "Импорт"
+TXT_NET_EXPORTS = "Экспорт"
+TXT_CONSUMPTION_INCREASED = "потребление возросло на"
+TXT_CONSUMPTION_DECREASED = "потребление упало на"
+TXT_PRODUCTION_INCREASED = "производство возросло на"
+TXT_PRODUCTION_DECREASED = "производство упало на"
+TXT_IMPORTS_INCREASED = "импорт возрос на"
+TXT_IMPORTS_DECREASED = "импорт упал на"
+TXT_EXPORTS_INCREASED = "экспорт возрос на"
+TXT_EXPORTS_DECREASED = "экспорт упал на"
+TXT_CONSUMPTION = "Потребление"
+TXT_PRODUCTION = "Производство"
+TXT_EXTRACTION = "Добыча" # For Russian coal/oil/gas production
+TXT_GENERATION = "Выработка"  # For Russian electricity production
+TXT_EXTRACTION_INCREASED = "добыча возросла на"
+TXT_EXTRACTION_DECREASED = "добыча упала на"
+TXT_GENERATION_INCREASED = "выработка возросла на"
+TXT_GENERATION_DECREASED = "выработка упала на"
+TXT_NOTE_NODATA = "* нет данных"
+TXT_NOTE_MINVALUE = "* не меньше"
+TXT_MSG_NODATA = "Нет данных"
+TXT_EARNED = "получено"
+TXT_SPENT = "потрачено"
+TXT_BILLION = "млрд."
+TXT_MISSING = "нет данных"
+TXT_NET_0 = "баланс"
+TXT_COAL = "уголь"
+TXT_OIL = "нефть"
+TXT_GAS = "газ"
+TXT_NUCLEAR = "АЭС"
+TXT_HYDRO = "ГЭС"
+TXT_US = "США"
+TXT_WORLD = "Весь мир"
+TXT_PERCENT = "% от общего"
+TXT_ENERGY_CONSUMED_INCREASED = "Потребление энергоресурсов возросло на"
+TXT_ENERGY_CONSUMED_DECREASED = "Потребление энергоресурсов упало на"
+TXT_ENERGY_PRODUCED_INCREASED = "Производство энергоресурсов возросло на"
+TXT_ENERGY_EXTRACTED_INCREASED = "Производство энергоресурсов возросло на"
+TXT_ENERGY_GENERATED_INCREASED = "Производство энергоресурсов возросло на"
+TXT_ENERGY_PRODUCED_DECREASED = "Производство энергоресурсов упало на"
+TXT_ENERGY_EXTRACTED_DECREASED = "Производство энергоресурсов упало на"
+TXT_ENERGY_GENERATED_DECREASED = "Производство энергоресурсов упало на"
+TXT_PERCENT_TITLE = "Доля каждого источника энергии."
+TXT_EFFICIENCY = "( эффективность 38% )"
+
+
+################################################################################
+# End of file
+################################################################################
+

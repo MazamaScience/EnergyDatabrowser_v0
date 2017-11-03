@@ -1,0 +1,161 @@
+################################################################################
+# First, a list of some regions
+################################################################################
+    country_list = c(
+                     MZM_NSE='North Sea',
+                     MZM_CRB='Caribbean',
+                     MZM_PRG='Persian Gulf',
+                     MZM_WAF='West Africa',
+                     MZM_WORLD='World',
+                     MZM_FSU='Former Soviet Union',
+                     MZM_EU0='Europe (-FSU)',
+                     MZM_EU1='Europe (+FSU)',
+                     MZM_OPEC='OPEC',
+                     MZM_OPEC10='OPEC-10',
+                     MZM_GCC='Gulf Cooperation Council',
+                     MZM_GECF='Gas Exporting Countries',
+                     MZM_GECF11='GECF-11',
+                     MZM_NON_OPEC='Non-OPEC',
+                     MZM_OECD='OECD',
+                     MZM_G7='G7',
+                     MZM_O5='O5',
+                     MZM_G75='G7 + O5',
+                     MZM_BELU='Belgium and Luxembourg',
+                     MZM_TNA='North America',
+                     MZM_TSCA='S. & Cent. America',
+                     MZM_TEE='Europe',
+                     MZM_TME='Middle East',
+                     MZM_TAF='Africa',
+                     MZM_TAP='Asia-Pacific'
+                    )
+
+################################################################################
+# Then a list of resources and units
+################################################################################
+  title_coal = 'Coal'
+  title_oil = 'Oil'
+  title_gas = 'Nat. Gas'
+  title_nuclear = 'Nuclear'
+  title_hydro = 'Hydro'
+  title_all = 'All'
+  title_consumption = 'Consumption'
+  title_production = 'Production'
+  units_mto = 'million tonnes per year'
+  units_mtoe = 'million tonnes oil equiv. per year'
+  units_bbl = 'million barrels per day'
+  units_ft3 = 'billion cubic feet per day'
+  units_m3 = 'billion cubic meters per year'
+  units_twh = 'Terawatt-hours per year'
+  units_joule = 'Exajoules per year'
+
+################################################################################
+# Then a list of special words and phrases
+################################################################################
+  txt = list(
+             subtitle = 'Data: BP Statistical Review 2010    Graphic: mazamascience.com',
+             year = 'Year',
+             units = text_units,
+             consumption = 'Consumption',
+             production = 'Production',
+             imports = 'net Imports',
+             exports = 'net Exports',
+             consumption_increased = 'consumption increased by',
+             consumption_decreased = 'consumption decreased by',
+             production_increased = 'production increased by',
+             production_decreased = 'production decreased by',
+             imports_increased = 'imports increased by',
+             imports_decreased = 'imports decreased by',
+             exports_increased = 'exports increased by',
+             exports_decreased = 'exports decreased by',
+             note_nodata = '* no data available',
+             note_minvalue = '* minimum value',
+             msg_nodata = 'No data available',
+             country = country,
+             earned = 'earned',
+             spent = 'spent',
+             billion = 'billion',
+             missing = 'no data',
+             net_0 = 'net zero',
+             coal = 'coal',
+             oil = 'oil',
+             gas = 'gas',
+             nuclear = 'nuclear',
+             hydro = 'hydro',
+             US = 'US',
+             World = 'World',
+             percent = '% of total',
+             energy_consumed_increased = 'Total energy consumed increased by',
+             energy_consumed_decreased = 'Total energy consumed decreased by',
+             energy_produced_increased = 'Total energy produced increased by',
+             energy_produced_decreased = 'Total energy produced decreased by',
+             percent_title = 'Percent contribution from each source.',
+             efficiency = '( 38% efficiency )'
+            )
+
+################################################################################
+# Finally some text used on the main HTML page
+################################################################################
+  <meta name="keywords" content="peak oil, export land model, energy export, oil, petroleum, gas, coal, export, data, British Petroleum, Statistical Review" />
+  <meta name="description" content="Explore timelines of fossil fuel use in over 100 nations and regions." />
+
+  <title>Energy Export Databrowser</title>
+
+         <li><a href="data.html">Data</a></li>
+         <li><a href="about.html">About</a></li>
+
+      Explore timelines of energy use in over 100 nations and regions.
+
+                  <a id="Exports" class="selected"
+                     title="Explore timelines of imports and exports.">Import/Export</a>
+
+                  <a id="Sources"
+                     title="Explore the evolution of energy sources.">All Fuels</a>
+
+                  <label for="countryID">Country / Group:</label>
+        
+                    <optgroup label="Groups of Nations">
+        
+                    <optgroup label="Oil Producing Regions">
+        
+                    <optgroup label="North America">
+        
+                    <optgroup label="South America">
+        
+                    <optgroup label="Europe & Eurasia">
+        
+                    <optgroup label="Middle East">
+        
+                    <optgroup label="Africa">
+        
+                    <optgroup label="Asia-Pacific">
+        
+
+                  <button id="advanced_options" type="button">Show Options</button>
+
+                  <button id="advanced_options" type="button">Hide Options</button>
+
+                <div id="advanced_options_div">
+
+                      <span>consumption</span>
+
+                      <span>production</span>
+
+                      <label class="checkbox-label" for="percent">percent</label>
+
+                      <label class="checkbox-label" for="showmap">show map</label>
+
+                      <span title="automatic scaling">auto</span>
+
+                      <span title="scale to US consumption">US</span>
+
+                      <span title="scale to world consumption">world</span>
+
+                      <label class="checkbox-label" for="percapita">per capita</label>
+
+
+    <span id="slogan">Data - Information - Knowledge</span>
+
+      Hosted by <a class="mazama-science" href="http://mazamascience.com">Mazama Science</a>
+
+
+      YOUR_LANGUAGE translation by YOUR_NAME

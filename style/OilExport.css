@@ -1,0 +1,204 @@
+/* Customizations for the Oil Export Databrowser */
+
+/* Basic tags */
+
+#content h2 {
+  margin: 10px 0 0 0;
+}
+
+#content h3, #content h4, #content h5, #content h6 {
+  margin: 10px 0 0 10px;
+}
+
+blockquote {
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid #ddf;
+}
+
+/* header and navigation */
+
+#header {
+  /* background: #fff url(./images/Derricks_900x75_B.jpg) no-repeat top center; */
+  background: #fff url(/OilExport/style/images/Derricks_900x75_B.jpg) no-repeat top center;
+}
+
+#navigation div.br {
+  /* background:#222 url(./images/corners/br.gif) no-repeat bottom right; */
+  background:#222 url(/OilExport/style/images/corners/br.gif) no-repeat bottom right;
+}
+
+/* Plottype tabs */
+
+#plottype_div {
+  padding: 10px;
+}
+
+#plottype_div ul.subsection_tabs {
+  border-bottom: 2px solid #aaa;
+  clear: both;
+  height: 1.5em;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+}
+#plottype_div ul.subsection_tabs li.tab {
+  float: left;
+  text-align: center;
+  padding: 0;
+  margin-left: 5px;
+}
+#plottype_div ul.subsection_tabs li.tab a {
+  padding: 0 0 1px 0;
+  border: 1px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  background-color: #fff;
+  display: block;
+  height: 1.5em;
+  padding: 0;
+  width: 10em;
+  color: #a62;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+#plottype_div ul.subsection_tabs li.tab a:hover {
+  color: #222; 
+  cursor: pointer;
+}
+#plottype_div ul.subsection_tabs li.tab a.selected {
+  border-bottom: 2px solid #fff;
+  color: #222;
+}
+#plottype_div ul.subsection_tabs li.tab a.selected:hover {
+  cursor: default;
+}
+
+/* Controls */
+
+#controls_div {
+  height: 300px;
+}
+
+/* Radio controls */
+
+#datasource_div div span {
+  padding-right: 10px;
+}
+
+#controls_div #radio_table_div {
+  padding-left: 0;
+}
+
+#radio_table_div td.label_td {
+  vertical-align: top;
+}
+
+/* Spans containing radio buttons get padding */
+#radio_table_div span.radio_span {
+  padding-right: 10px;
+}
+
+#radio_table_div span.selected {
+  font-weight: bold;
+}
+
+#radio_table_div input {
+  padding-right: 2px;
+}
+
+#data_row span {
+  font-weight: bold;
+}
+
+#controls_td {
+  vertical-align: top;
+}
+
+label.radio_label {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#plot_options_div span.label {
+  padding: 0 0 5px 0;
+  color: #A62;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+#plot_options_div label.checkbox-label {
+  padding: 0;
+  color: #222;
+  font-weight: normal;
+  letter-spacing: auto;
+}
+
+/* Advanced options */
+
+div#advanced_options_button_div {
+  padding-top: 10px;
+}
+button#advanced_options {
+/*
+  margin-left: 10px;
+  padding: 3px 30px;
+*/
+}
+/*
+a#advanced_options {
+  margin-left: 20px;
+  padding: 3px 30px;
+  text-decoration: underline;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+}
+a#advanced_options:hover {
+  cursor: pointer;
+}
+a#advanced_options.selected {
+  background-color: #eee;
+  border-left: 2px solid #aaa;
+  border-top: 2px solid #aaa;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+*/
+div#advanced_options_div {
+  margin-left: 5px;
+}
+
+/* Feedjit */
+
+#Feedjit {
+  padding: 10px 10px;
+}
+
+#Feedjit_outer_table {
+  width: 260px;
+}
+
+#Feedjit #spinner {
+  border: 0;
+  padding-left: 10px;
+}
+
+/* Languages */
+
+#languages {
+  text-align: center;
+}
+
+#languages a.language {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+#languages a.language:hover {
+  color: #a62;
+}
+

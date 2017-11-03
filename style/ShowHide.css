@@ -1,0 +1,19 @@
+.trigger {
+  background: #eef;
+  cursor: pointer;
+}		
+.trigger:hover {
+  cursor: pointer;
+  background: #dde;
+}		
+.expanded {
+  background: #fff;
+  cursor: pointer;
+}
+.expanded:hover {
+  background: #eef;
+  cursor: pointer;
+}
+.trigger img {
+  padding: 0 8px;
+}
